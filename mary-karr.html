@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/top-menu.css" />
+    <link rel="stylesheet" href="css/content/arrows.css" />
+    <link rel="stylesheet" href="css/content/glass-html.css" />
+  </head>
+  <body>
+    <!-- **** NAVBAR **** -->
+    <header>
+      <section id="top-menu">
+        <div class="top">
+          <a href="index.html" class="logo"></a>
+          <div class="toggle"></div>
+        </div>
+        <div class="glass backdrop-blur"></div>
+      </section>
+      <section id="navigation">
+        <div class="accordion accordion-flush navigation" id="nav-accordion">
+          <div class="accordion-item" style="--i: 1">
+            <h5 class="accordion-header" id="HeadingOne">
+              <a href="index.html">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Home
+                </button>
+              </a>
+            </h5>
+          </div>
+          <div class="accordion-item" style="--i: 2">
+            <h5 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                The Warriors
+              </button>
+            </h5>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#nav-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <a href="jeanne-de-clisson.html">Jeanne de Clisson</a>
+                  </li>
+                  <li><a href="joe-frazier.html">Joe Frazier</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="--i: 3">
+            <h5 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                The Poets
+              </button>
+            </h5>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#nav-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="tina-chang.html">Tina Chang</a></li>
+                  <li><a href="mary-karr.html">Mary Karr</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="--i: 4">
+            <h5 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                The Musicians
+              </button>
+            </h5>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#nav-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="john-coltrane.html">John Coltrane</a></li>
+                  <li><a href="ella-fitzgerald.html">Ella Fitzgerald</a></li>
+                  <li><a href="morgan-james.html">Morgan James</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="social">
+        <ul class="text-center w-100">
+          <li style="--i: 1">
+            <a href="#"><i class="fab fa-facebook fa-5x"></i></a>
+          </li>
+          <li style="--i: 2">
+            <a href="#"><i class="fab fa-github fa-5x"></i></a>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <!-- **** NAVBAR ENDS HERE **** -->
+    <main>
+      <section class="glass-bio backdrop-blur">
+        <div class="row g-sm-0">
+          <div class="dashboard col-lg-4 col-md-12">
+            <div class="portrait-container my-5">
+              <img
+                src="img/heroes/karr/karr-portrait2.jpg"
+                class="img-fluid"
+                alt="Mary Karr"
+              />
+            </div>
+            <h1>Mary Karr</h1>
+            <div class="achievements">
+              <h2>Known for:</h2>
+              <div class="achieved">
+                <span>Writing lyrics for people like Nora Jones.</span>
+              </div>
+              <div class="achieved my-2">
+                <span>Writing the most painful poetry...</span>
+              </div>
+              <div class="achieved">
+                <span>... And also self-help books (like whut?!)</span>
+              </div>
+            </div>
+            <div class="quote">
+              <h3>Chosen Quote:</h3>
+              <p>
+                "Sure the world breeds monsters, but kindness grows just as
+                wild..." <br /><i>From: The Liar's Club</i>
+              </p>
+            </div>
+          </div>
+          <div class="content col-lg-8 col-md-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Discovering a Badass
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/karr/karr-getty.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          When I read
+                          <b
+                            >“A dysfunctional family is any family with more
+                            than one person in it"</b
+                          >
+                          , from a woman who describes her youth as her journey
+                          <b
+                            >"from black-belt sinner and lifelong agnostic to
+                            unlikely Catholic,”</b
+                          >
+                          and she ends the interview with
+                          <b
+                            >“Even the best of us are at least part-time
+                            bastards.”</b
+                          >
+                        </p>
+                        <p>... Something tells me this woman is a badass</p>
+                        <p>
+                          The interviewer talks about her abused childhood, how
+                          she's sweetly but strongly Texan, how she goes
+                          hermit-mode when writing, eating pistachoes all day,
+                          <b>"oh and, by the way, she curses like a sailor."</b>
+                        </p>
+                        <p>
+                          There I think to myself
+                          <i>I've found my spirit animal in poetry</i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Even more name-dropping
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/karr/karr-wallace.jpg"
+                          alt=""
+                          class="img-fluid my-auto"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          Karr may not be known to general audiences, but she
+                          has impressed people in the literary world
+                          <b>all her life.</b>
+                        </p>
+                        <p>
+                          She suffered an <b>abusive relationship</b> with the
+                          legendary poet <b>David Foster Wallace</b>, who had a
+                          mild case of "couldn't stop thinking about her", to
+                          the point where
+                          <b>he tattooed her name on his body</b>.
+                        </p>
+                        <p>
+                          She became a
+                          <b>New York Times bestselling author</b> after the
+                          release of her first memoir, <i>The Liar's Club</i>.
+                        </p>
+                        <p>
+                          But <b>I like her</b> for her painfully
+                          <b>self-violent</b>, <b>humorous</b>, yet concise,
+                          <b>one-hit-KO hitting poetry</b>. Check out Karr's
+                          <a
+                            href="https://www.poetryfoundation.org/poetrymagazine/browse?volume=138&issue=3&page=15"
+                            >My New Diet</a
+                          >
+                          , if you like.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    The darkest of pasts
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/karr/karr-queen.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          One reason Karr may be so elusive and hermit-like, is
+                          because in her memoir she describes things like:
+                        </p>
+                        <ul
+                          class="list-group list-group-flush bg-transparent mb-3"
+                        >
+                          <li class="list-group-item">
+                            Being repeatedly abused by pedophiles
+                          </li>
+                          <li class="list-group-item">
+                            Her mother trying to murder her with a butcher knife
+                          </li>
+                          <li class="list-group-item">
+                            David Foster Wallace throwing a kitchen table at her
+                          </li>
+                        </ul>
+                        <p>
+                          And in her writings, you feel the bottomless darkness
+                          she has seen, but she nourishes you with her feminine
+                          strength necessary to survive
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    That sweet, nourishing strength
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFcollapseFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-3 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/karr/karr-king.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-9 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          That strength some people have to survive the darkest,
+                          most cruel machinations of fate. I don't know where it
+                          comes from, and I envy the people who have it.
+                        </p>
+                        <p>
+                          I do have a clue, though: I think it may come from
+                          unrelenting optimism, and a sense of humor.
+                        </p>
+                        <p>Near the end of the interview...</p>
+                        <p>
+                          <i>Interviewer:</i> "You talk about writer's block.
+                          Could you explain what that sounds like in your head?"
+                        </p>
+                        <p class="mb-5">
+                          <i>Karr:</i> "SH*T! F*CK! DON'T! STOP! F*CK! DON'T!
+                          F*CK! SH*T! STOP!"
+                        </p>
+                        <small
+                          >* Photo: Yep, that is the King of Horror next to our
+                          badass girl!</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="arrow-set">
+        <a href="tina-chang.html">
+          <div class="arrow" id="previous">
+            <i class="fas fa-chevron-left fa-3x"></i>&nbsp;
+          </div>
+        </a>
+        <a href="john-coltrane.html">
+          <div class="arrow" id="next">
+            &nbsp;<i class="fas fa-chevron-right fa-3x"></i>
+          </div>
+        </a>
+      </div>
+    </main>
+    <script src="js/top-menu.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      tippy("#previous", {
+        content: "Tina Chang",
+        animation: "scale",
+      });
+      tippy("#next", {
+        content: "John Coltrane",
+        animation: "scale",
+      });
+    </script>
+  </body>
+</html>

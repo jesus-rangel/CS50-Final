@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0 !important;
+}
+
+main {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.glass-bio {
+  min-height: 85vh;
+  width: 85%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  /* backdrop-filter: blur(1rem); */
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.3);
+}
+
+.dashboard h1,
+.dashboard h2,
+.quote h3,
+.glass-bio button.accordion-button {
+  font-family: "Amiri", serif;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.9)
+  );
+  border-radius: 2rem;
+}
+
+.dashboard .portrait-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 10em;
+  max-width: 10em;
+  margin-left: 1rem;
+}
+
+.dashboard img {
+  border-radius: 50%;
+}
+
+.achieved {
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.quote {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* **** CONTENT SECTION **** */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.content button {
+  width: 100%;
+  font-size: 0.8em;
+}
+
+/* Makes accordion arrow less opaque */
+.content .accordion-button::after {
+  opacity: 0.3;
+}
+
+/* Makes accordion arrow white when all else is black */
+.content .accordion-button:not(.collapsed)::after,
+.content .accordion-button:focus::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+  opacity: 1 !important;
+}
+
+.content .accordion-collapse {
+  border-bottom: none;
+}
+
+.content .accordion-button.collapsed {
+  border-top: none;
+}
+
+.custom-card {
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 1rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.3);
+  margin: 0.5rem 0;
+}
+
+.custom-card .image-container {
+  display: flex;
+  justify-content: center;
+}
+.custom-card img {
+  border-radius: 1rem;
+}
+
+.custom-card .paragraph {
+  margin: 1rem;
+}
+
+.custom-card .accordion-body .row span {
+  line-height: 2;
+}
+.custom-card .accordion-body .row small {
+  font-size: 1.03em;
+  line-height: 1.25;
+}
+.custom-card .accordion-body .row p {
+  line-height: 2;
+}
+
+.content .accordion-button:focus,
+.content a:focus,
+.content h2:focus,
+.content .accordion-button:not(.collapsed) {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none !important;
+  border-radius: 1rem !important;
+  color: #000000;
+}
+
+.content .accordion-header:focus,
+.content .accordion-item:focus,
+.content .accordion-button:not(.collapsed) {
+  outline: none !important;
+  box-shadow: none;
+  text-decoration: none !important;
+  border-radius: 1rem !important;
+}
+
+/* **** MEDIA QUERIES **** */
+
+@media (max-width: 1200px) {
+  .custom-card img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .glass-bio {
+    width: 75%;
+  }
+}
+
+@media (max-width: 650px) {
+  .glass-bio {
+    width: 90%;
+  }
+}

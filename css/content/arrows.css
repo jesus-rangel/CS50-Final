@@ -1,0 +1,49 @@
+#arrow-set {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#arrow-set a {
+  text-decoration: none;
+}
+
+.arrow {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow i {
+  color: rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.arrow:hover i {
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 650px) {
+  #arrow-set {
+    visibility: hidden;
+    z-index: -1;
+  }
+}

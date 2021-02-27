@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url(../img/home/background2.png);
+}
+
+h1 {
+  font-family: "Amiri", serif;
+  font-weight: normal;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+p:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2.5em;
+  width: 20%;
+  /* background: red; */
+}
+
+main {
+  padding-top: 60px;
+}
+
+#title {
+  padding: 9em 4em 8em 0.5em;
+}
+
+#images-right {
+  position: absolute;
+  width: 45%;
+  height: 37em;
+  z-index: 1;
+  right: 0;
+}
+
+#image1,
+#image2 {
+  position: relative;
+  width: 100%;
+  min-height: 50%;
+}
+
+#images-bottom {
+  width: 80%;
+  z-index: 3;
+  display: flex;
+  position: relative;
+}
+
+#image3 {
+  width: 8em;
+  height: 8em;
+  position: relative;
+}
+
+#image4 {
+  position: relative;
+  width: 100%;
+  height: 8em;
+}
+
+@media (min-width: 576px) {
+  #title {
+    font-size: 18px;
+    padding: 9em 4em 5em 3em;
+  }
+
+  #images-right {
+    height: 40em;
+  }
+
+  #images-bottom {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  #title {
+    padding: 9em 4em 5em 1.5em;
+  }
+  #title p {
+    padding-left: 5%;
+  }
+
+  #images-right {
+    width: 40%;
+  }
+
+  #image3 {
+    width: 10em;
+    height: 10em;
+  }
+
+  #image4 {
+    height: 10em;
+  }
+}
+@media (min-width: 992px) {
+  #title {
+    font-size: 20px;
+    padding: 7em 4em 5em 6em;
+  }
+
+  #image3 {
+    width: 15em;
+    height: 15em;
+  }
+
+  #image4 {
+    height: 15em;
+  }
+
+  #images-bottom {
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  #title {
+    font-size: 22px;
+    padding: 7em 4em 3em 6em;
+  }
+
+  #images-right {
+    width: 35%;
+  }
+
+  #image3 {
+    width: 16em;
+    height: 16em;
+  }
+
+  #image4 {
+    height: 16em;
+  }
+
+  #images-bottom {
+    width: 70%;
+  }
+}
+@media (min-width: 1400px) {
+  #images-right {
+    width: 35%;
+  }
+} /*# sourceMappingURL=main.css.map */

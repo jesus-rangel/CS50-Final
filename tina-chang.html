@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/top-menu.css" />
+    <link rel="stylesheet" href="css/content/arrows.css" />
+    <link rel="stylesheet" href="css/content/glass-html.css" />
+  </head>
+  <body>
+    <!-- **** NAVBAR **** -->
+    <header>
+      <section id="top-menu">
+        <div class="top">
+          <a href="index.html" class="logo"></a>
+          <div class="toggle"></div>
+        </div>
+        <div class="glass backdrop-blur"></div>
+      </section>
+      <section id="navigation">
+        <div class="accordion accordion-flush navigation" id="nav-accordion">
+          <div class="accordion-item" style="--i: 1">
+            <h5 class="accordion-header" id="HeadingOne">
+              <a href="index.html">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Home
+                </button>
+              </a>
+            </h5>
+          </div>
+          <div class="accordion-item" style="--i: 2">
+            <h5 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                The Warriors
+              </button>
+            </h5>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#nav-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <a href="jeanne-de-clisson.html">Jeanne de Clisson</a>
+                  </li>
+                  <li><a href="joe-frazier.html">Joe Frazier</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="--i: 3">
+            <h5 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                The Poets
+              </button>
+            </h5>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#nav-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="tina-chang.html">Tina Chang</a></li>
+                  <li><a href="mary-karr.html">Mary Karr</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="--i: 4">
+            <h5 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                The Musicians
+              </button>
+            </h5>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#nav-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="john-coltrane.html">John Coltrane</a></li>
+                  <li><a href="ella-fitzgerald.html">Ella Fitzgerald</a></li>
+                  <li><a href="morgan-james.html">Morgan James</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="social">
+        <ul class="text-center w-100">
+          <li style="--i: 1">
+            <a href="#"><i class="fab fa-facebook fa-5x"></i></a>
+          </li>
+          <li style="--i: 2">
+            <a href="#"><i class="fab fa-github fa-5x"></i></a>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <!-- **** NAVBAR ENDS HERE **** -->
+    <main>
+      <section class="glass-bio backdrop-blur">
+        <div class="row g-sm-0">
+          <div class="dashboard col-lg-4 col-md-12">
+            <div class="portrait-container my-5">
+              <img
+                src="img/heroes/tina/tina-portrait.png"
+                class="img-fluid"
+                alt="Jeanne de Clisson"
+              />
+            </div>
+            <h1>Tina Chang</h1>
+            <div class="achievements">
+              <h2>Known for:</h2>
+              <div class="achieved">
+                <span>Looking to demistify poetry, to avoid loftiness.</span>
+              </div>
+              <div class="achieved my-2">
+                <span>Given every lofty position and award in poetry.</span>
+              </div>
+              <div class="achieved">
+                <span
+                  >First woman to be awarded poet laureate of Brooklyn.</span
+                >
+              </div>
+            </div>
+            <div class="quote">
+              <h3>Chosen Quote:</h3>
+              <p>
+                "The ultimate goal is to break down the wall between people and
+                poetry..."
+              </p>
+            </div>
+          </div>
+          <div class="content col-lg-8 col-md-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Can a woman have you with one poem?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/tina/karr-quote.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          Can someone become your hero with just a few
+                          verses?<br />
+                          Let's fall back to our favorite badass poet for the
+                          answer to that question:
+                        </p>
+                        <figure class="my-4">
+                          <blockquote class="blockquote">
+                            <p>
+                              “Such a small, pure object a poem could be, made
+                              of nothing but air, a tiny string of letters,
+                              maybe small enough to fit in the palm of your
+                              hand. But it could blow everybody's head off.”
+                            </p>
+                          </blockquote>
+                          <figcaption class="blockquote-footer">
+                            Mary Karr,
+                            <cite title="Source Title">Lit</cite>
+                          </figcaption>
+                        </figure>
+                        <p>So yeah, there we go...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    But... the elephant in the room?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/tina/tina-hot.jpeg"
+                          alt=""
+                          class="img-fluid my-auto"
+                          style="max-height: 10em"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>Ok, she's hot. Let's face it.</p>
+                        <p>
+                          So is it just my hormones talking? Hot, smart,
+                          sensitive girl...
+                        </p>
+                        <p>
+                          I don't think so (not too sure though, but shhh!).
+                          Because The Poem is about Woman Objectified. Her as a
+                          sex object.
+                        </p>
+                        <p>
+                          It is about the emptiness and, admittedly, according
+                          to her, the vicious pleasure, the power that comes
+                          with being beautiful and wanted.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    The Poem
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/tina/tina-bw.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p class="text-center">
+                          <a
+                            href="https://poets.org/poem/duality"
+                            target="_blank"
+                            >The Poem is called Duality</a
+                          >.
+                        </p>
+                        <p>
+                          It is a brutal, gritty (no loftiness) take on a woman
+                          who has embraced her power over men, or man, it
+                          doesn't matter to her. If you read it, notice she
+                          speaks about one man in particular, but doesn't deign
+                          give him a name.
+                        </p>
+                        <figure>
+                          <blockquote class="blockquote">
+                            <p>
+                              "I'll (...) think of the good I've done for the
+                              world, how satisfying it feels to give a man
+                              something to contemplate."
+                            </p>
+                          </blockquote>
+                          <figcaption class="blockquote-footer">
+                            Tina Chang,
+                            <cite title="Source Title">Duality</cite>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    The Duality
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/tina/tina-thoughtful.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          But in romance, where two people should be equals, too
+                          often one looks up to the other... and the other one
+                          is looking down, even if so high she can touch the
+                          clouds...
+                        </p>
+                        <figure>
+                          <blockquote class="blockquote">
+                            <p>
+                              "...in her sleep she rises above a disappearing
+                              city, her head touching a remote heaven, though
+                              below her, closer to the ground, she feels an ache
+                              at the bottom."
+                            </p>
+                          </blockquote>
+                          <figcaption class="blockquote-footer">
+                            Tina Chang,
+                            <cite title="Source Title">Duality</cite>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    No pursuers, only the pursued
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-3 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/tina/tina-small.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-9 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          She speaks of herself as if being somehow hunted by
+                          time...
+                        </p>
+                        <figure>
+                          <blockquote class="blockquote">
+                            <p>
+                              "The woman (...) will not think about how wrong
+                              she is, how her calculations look like the face of
+                              a clock with hands ticking with each terrorizing
+                              minute. "
+                            </p>
+                          </blockquote>
+                          <figcaption class="blockquote-footer">
+                            Tina Chang,
+                            <cite title="Source Title">Duality</cite>
+                          </figcaption>
+                        </figure>
+                        <ul class="list-group list-group-flush mb-4">
+                          <li class="list-group-item">
+                            Is this about her youth, and her sensuality having
+                            an expiration date?
+                          </li>
+                          <li class="list-group-item">
+                            Is it about the fear of ending up alone after all?
+                          </li>
+                          <li class="list-group-item">
+                            About how she ended up herself objectifying men, and
+                            how her comeuppance is inevitable?
+                          </li>
+                        </ul>
+                        <p>
+                          I believe all of the above are fascinating, and speak
+                          deeply to the loneliness, the anxiety of our times.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSix"
+                  >
+                    Tina Chang's accolades
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSix"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div class="image-container col-xl-12 align-self-center">
+                        <img
+                          src="img/heroes/tina/tina-smile.jpg"
+                          alt=""
+                          class="img-fluid"
+                          style="max-height: 10em"
+                        />
+                      </div>
+                      <div class="col-xl-12 ps-3 pe-1 align-self-center">
+                        <p>
+                          I tried to fit
+                          <a
+                            href="https://en.wikipedia.org/wiki/Tina_Chang#Career"
+                            target="_blank"
+                            >her poetry accolades and achievements</a
+                          >
+                          here, but they're so many they break the layout of the
+                          site.
+                        </p>
+                        <p>
+                          I'm glad we live in a time where authors like her get
+                          the recognition they deserve. I hope the days of
+                          Melville dying poor and Kafka and Dickinson dying
+                          unpublished are long gone.
+                        </p>
+                        <p>
+                          But then again, look at that smile. Maybe it's just
+                          the hormones, right? XP
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="arrow-set">
+      <a href="joe-frazier.html">
+        <div class="arrow" id="previous">
+          <i class="fas fa-chevron-left fa-3x"></i>&nbsp;
+        </div>
+      </a>
+      <a href="mary-karr.html">
+        <div class="arrow" id="next">
+          &nbsp;<i class="fas fa-chevron-right fa-3x"></i>
+        </div>
+      </a>
+    </div>
+    <script src="js/top-menu.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      tippy("#previous", {
+        content: "Joe Frazier",
+        animation: "scale",
+      });
+      tippy("#next", {
+        content: "Mary Karr",
+        animation: "scale",
+      });
+    </script>
+  </body>
+</html>

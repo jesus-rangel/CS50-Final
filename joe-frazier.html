@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/top-menu.css" />
+    <link rel="stylesheet" href="css/content/arrows.css" />
+    <link rel="stylesheet" href="css/content/glass-html.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- **** NAVBAR **** -->
+    <header>
+      <section id="top-menu">
+        <div class="top">
+          <a href="index.html" class="logo"></a>
+          <div class="toggle"></div>
+        </div>
+        <div class="glass backdrop-blur"></div>
+      </section>
+      <section id="navigation">
+        <div class="accordion accordion-flush navigation" id="nav-accordion">
+          <div class="accordion-item" style="--i: 1">
+            <h5 class="accordion-header" id="HeadingOne">
+              <a href="index.html">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Home
+                </button>
+              </a>
+            </h5>
+          </div>
+          <div class="accordion-item" style="--i: 2">
+            <h5 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                The Warriors
+              </button>
+            </h5>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#nav-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <a href="jeanne-de-clisson.html">Jeanne de Clisson</a>
+                  </li>
+                  <li><a href="joe-frazier.html">Joe Frazier</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="--i: 3">
+            <h5 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                The Poets
+              </button>
+            </h5>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#nav-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="tina-chang.html">Tina Chang</a></li>
+                  <li><a href="mary-karr.html">Mary Karr</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="--i: 4">
+            <h5 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                The Musicians
+              </button>
+            </h5>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#nav-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="john-coltrane.html">John Coltrane</a></li>
+                  <li><a href="ella-fitzgerald.html">Ella Fitzgerald</a></li>
+                  <li><a href="morgan-james.html">Morgan James</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="social">
+        <ul class="text-center w-100">
+          <li style="--i: 1">
+            <a href="#"><i class="fab fa-facebook fa-5x"></i></a>
+          </li>
+          <li style="--i: 2">
+            <a href="#"><i class="fab fa-github fa-5x"></i></a>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <!-- **** NAVBAR ENDS HERE **** -->
+    <main>
+      <section class="glass-bio backdrop-blur">
+        <div class="row g-sm-0">
+          <div class="dashboard col-lg-4 col-md-12">
+            <div class="portrait-container my-5">
+              <img
+                src="img/heroes/frazier/frazier-portrait2.jpg"
+                class="img-fluid"
+                alt="Joe Frazier"
+              />
+            </div>
+            <h1>Joe Frazier</h1>
+            <div class="achievements">
+              <h2>Known for:</h2>
+              <div class="achieved">
+                <span>
+                  <a
+                    href="https://www.youtube.com/watch?v=PLWYnTFz9PE&t=25s"
+                    target="_blank"
+                    >Knocking Ali out in his prime</a
+                  >.</span
+                >
+              </div>
+              <div class="achieved my-2">
+                <span>Among top 10 heavyweights in history.</span>
+              </div>
+              <div class="achieved">
+                <span>Willing to die in the ring.</span>
+              </div>
+            </div>
+            <div class="quote">
+              <h3>Chosen Quote:</h3>
+              <p>
+                "Ali kept calling me ugly, but (...) I have 11 babies, somebody
+                thought I was cute."
+              </p>
+            </div>
+          </div>
+          <div class="content col-lg-8 col-md-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    And you thought tinder girls were cruel...
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/frazier/frazier-bandages.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          Joe Frazier was born looking
+                          <b>so intimidating</b> that, in school,
+                          <b>kids would pay him</b> pennies to walk along with
+                          him <b>so bullies would be warded away</b>.
+                        </p>
+                        <p>
+                          Still, later in his life,
+                          <b>coach Eddie Futch</b> considered him basically a
+                          <b>chihuahua</b> in the heavyweight division, and had
+                          to develop an unorthodox fighting style for his short
+                          size.
+                        </p>
+                        <p>
+                          Frazier's height?
+                          <b>6 and a half inches</b>. Go cry about Tinder girls
+                          now, you millenial hipster boy.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Getting personal
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/frazier/castellini-baby2.jpg"
+                          alt=""
+                          class="img-fluid my-auto"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          That man in the picture was Miguel Angel Castellini,
+                          ex world champion from Argentina.
+                        </p>
+                        <p>
+                          I trained under him after I had been bullied in
+                          school, had attempted suicide, but then luckily I
+                          found combat sports, a much more constructive form of
+                          self-destruction.
+                        </p>
+                        <p>
+                          I'm 5'5. The first time Castellini saw me sparring, my
+                          opponent was 6'3. I got destroyed.
+                        </p>
+                        <p>
+                          Castellini, old, with brain damage,
+                          <b>but the eye of a champ still intact</b>, told me my
+                          stance was too wide for chasing such tall opponents.
+                          <b>That I needed a footwork like Frazier's</b>.
+                        </p>
+                        <p>
+                          So off I went to study some boxing history, and have
+                          my life changed forever.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    About Chihuahuas
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-3 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/frazier/chihuahua3.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-9 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          Frazier was told, like Tyson, he was
+                          <b>too short</b> to ever be champion. His reaction
+                          made <b>Chihuahuas</b> proud all over the world.
+                        </p>
+                        <p>
+                          Frazier and his coach acknowledged the height
+                          disadvantage, then developed such a hyper-aggressive
+                          <b>(Chihuahuas)</b>
+                          , anti-orthodox style,
+                          <a
+                            href="https://www.youtube.com/watch?v=TgYatqhkQk0&t=97s"
+                            target="_blank"
+                            >that Frazier would advance moving his back foot
+                            first</a
+                          >.
+                        </p>
+                        <p class="mb-5">
+                          This would keep Frazier's feet close to each other,
+                          always ready to spring forward viciously on his
+                          retreating victims. <b>(Like Chihuahas)</b>.
+                        </p>
+                        <small
+                          >* Photo: Chihuahua reacting to Ali vs Frazier (1971)
+                          colorized.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    The willingness to die
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div class="image-container col-xl-12 align-self-center">
+                        <img
+                          src="img/heroes/frazier/frazier-ali-knockout.png"
+                          alt=""
+                          class="img-fluid"
+                          style="max-height: 10em"
+                        />
+                      </div>
+                      <div class="col-xl-12 ps-3 pe-1 align-self-center">
+                        <p>
+                          <b>Frazier</b> became the first boxer to defeat Ali,
+                          and the <b>only boxer</b> to defeat Ali before his
+                          health problems began to show.
+                        </p>
+                        <p></p>
+                        <p>
+                          The last round of their second rematch is referred to
+                          as
+                          <b>"boxing's lost round."</b> Frazier's coach threw in
+                          the towel <b>fearing Frazier would die</b> .
+                          <b>"I don't care,</b> boss.<b> I want him"</b>.
+                          Frazier protested. Ali ended up winning the series,
+                          but experts agree nobody knows what would have
+                          happened had the towel not been thrown.
+                        </p>
+                        <p>
+                          Ali, in a rare display of admiration towards Frazier,
+                          admitted he felt so close to dying, that he joked
+                          between rounds to his coach,
+                          <b
+                            >"Am I dead yet? I'm pretty sure that ugly gorilla
+                            just killed me."</b
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    ...And inner demons
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/frazier/castellini.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          As for me, being 5'5 means that, when I'm in the ring,
+                          <b>the size of my opponents</b> is reminiscent of my
+                          school bullies. But <b>the adult me</b> has hours of
+                          studying Frazier, Tyson and a huge etc. after meeting
+                          Castellini.*
+                        </p>
+                        <p class="mb-5">
+                          It means The adult me can hold
+                          <b>the scared little inner child in me</b>, as the
+                          round is about to start, and tell him
+                          <b
+                            >"I've got this. He's not the only wolf in this den.
+                            I'll keep you safe."</b
+                          >
+                        </p>
+                        <small
+                          >* Final note: Working on this project I discovered
+                          coach Castellini passed away of Covid. This web site
+                          is dedicated to him.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="arrow-set">
+        <a href="jeanne-de-clisson.html">
+          <div class="arrow" id="previous">
+            <i class="fas fa-chevron-left fa-3x"></i>&nbsp;
+          </div>
+        </a>
+        <a href="tina-chang.html">
+          <div class="arrow" id="next">
+            &nbsp;<i class="fas fa-chevron-right fa-3x"></i>
+          </div>
+        </a>
+      </div>
+    </main>
+    <script src="js/top-menu.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      tippy("#previous", {
+        content: "Jeanne de Clisson",
+        animation: "scale",
+      });
+      tippy("#next", {
+        content: "Tina Chang",
+        animation: "scale",
+      });
+    </script>
+  </body>
+</html>

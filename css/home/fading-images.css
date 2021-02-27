@@ -1,0 +1,145 @@
+.image {
+  position: absolute;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5 !important;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0.5 !important;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated-img-1 {
+  animation-name: fadeAnimation;
+  z-index: 4 !important;
+  animation-duration: 4.7s;
+  animation-iteration-count: infinite;
+}
+
+.animated-img-2 {
+  animation-name: fadeAnimation;
+  z-index: 4 !important;
+  animation-duration: 4.2s;
+  animation-iteration-count: infinite;
+}
+
+.animated-img-3 {
+  animation-name: fadeAnimation;
+  z-index: 5 !important;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.animated-img-4 {
+  animation-name: fadeAnimation;
+  z-index: 5 !important;
+  animation-duration: 5.5s;
+  animation-iteration-count: infinite;
+}
+
+.image1,
+.image2 {
+  z-index: 2;
+}
+
+.image3,
+.image4 {
+  z-index: 3;
+}
+
+#image1-coltrane {
+  background: url(../../img/home/coltrane/Coltrane.jpg);
+  background-position-x: 35%;
+}
+
+#image1-frazier {
+  background: url(../../img/home/frazier/Frazier-collage3.jpg);
+  background-position-x: 50%;
+}
+
+#image1-james {
+  background: url(../../img/home/james/James-flying.png);
+  background-position-x: 20%;
+}
+
+#image1-ella {
+  background: url(../../img/home/ella/ella-portrait.jpg);
+  background-position-x: 40%;
+}
+
+#image2-jeanne {
+  background: url(../../img/home/jeanne/jeanne-de-clisssone.jpg);
+  background-position-x: 20%;
+}
+
+#image2-tina {
+  background: url(../../img/home/tina/Tina-Chang.jpg);
+}
+
+#image2-coltrane {
+  background: url(../../img/home/coltrane/coltrane-collage.png);
+  background-position-y: 50%;
+  background-position-x: 35%;
+}
+
+#image2-karr {
+  background: url(../../img/home/karr/Karr.jpg);
+  background-position-x: 30%;
+}
+
+#image3-jeanne {
+  background: url(../../img/home/jeanne/Jeanne-cropped.jpg);
+}
+
+#image3-james {
+  background: url(../../img/home/james/Morgan-James.jpg);
+}
+
+#image3-karr {
+  background: url(../../img/home/karr/karr-portrait.jpg);
+}
+
+#image3-pizarnik {
+  background: url(../../img/home/pizarnik/Pizarnik2.jpg);
+}
+
+#image3-coltrane {
+  background: url(../../img/home/coltrane/coltrane-playing.jpg);
+}
+
+#image4-frazier {
+  background: url(../../img/home/frazier/Frazier-Ali-cropped.png);
+}
+
+#image4-ella {
+  background: url(../../img/home/ella/Ella-cropped.png);
+}
+
+#image4-tina {
+  background: url(../../img/home/tina/Tina-Chang2.jpg);
+}
+
+#image4-james {
+  background: url(../../img/home/james/James-landscape.jpg);
+}

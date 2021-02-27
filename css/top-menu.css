@@ -1,0 +1,292 @@
+/* **** TOP MENU **** */
+
+section#top-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  font-family: "Amiri", serif;
+}
+
+section#top-menu .top {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.3em 2em;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top .logo {
+  position: relative;
+  font-size: 2em;
+  color: #212529 !important;
+  font-weight: 400;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.top .toggle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url(../img/menu/menu2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top .toggle:before {
+  content: "Menu";
+  position: absolute;
+  right: 2em;
+  color: #212529 !important;
+  letter-spacing: 1px;
+  font-size: 1.85em;
+  padding-top: 5px;
+}
+
+body.active-menu .top .toggle {
+  background: url(../img/menu/close2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+
+body.active-menu .top .toggle:before {
+  content: "Close";
+}
+
+.glass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  /* backdrop-filter: blur(15px); */
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+body.active-menu .glass {
+  height: 100%;
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.top .logo:before {
+  content: "My Heroes";
+}
+
+/* *********************** */
+
+/* **** MEDIA-QUERIES **** */
+@media (max-width: 768px) {
+  .top .toggle:before {
+    content: "";
+  }
+
+  .top .toggle::after {
+    content: "";
+  }
+}
+
+@media (max-width: 991px) {
+  section#top-menu .top {
+    padding: 10px 20px !important;
+  }
+}
+
+/* ******************** */
+
+/* **** NAVIGATION **** */
+
+section#navigation {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.navigation {
+  position: fixed;
+  top: 25%;
+  transform: translateY(-50%, -50%);
+  z-index: -1;
+  transition-delay: 0.7s;
+}
+
+.navigation li {
+  list-style: none;
+  text-align: left;
+  margin: 5px 0 5px -20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  transform: translateX(200px);
+  transition-delay: calc(0.2s * var(--i));
+}
+
+.navigation .accordion-item {
+  list-style: none;
+  text-align: center;
+  margin: 15px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  transform: translateX(200px);
+  transition-delay: calc(0.2s * var(--i));
+}
+
+.navigation .accordion-collapse {
+  border-bottom: none;
+}
+
+.navigation .accordion-button.collapsed {
+  border-top: none;
+}
+
+body.active-menu .navigation {
+  z-index: 12;
+  transition-delay: 0s;
+}
+
+.navigation .accordion-item button {
+  color: #212529;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  background: #fff;
+  padding: 4px 10px;
+}
+
+button.accordion-button {
+  width: 292px;
+}
+
+body.active-menu .navigation .accordion-item {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0px);
+}
+
+.navigation .accordion-item button:hover {
+  background: #111;
+  color: #fff;
+}
+
+.accordion-button:focus,
+.accordion-item:focus,
+.accordion-button:not(.collapsed) {
+  background: #111 !important;
+  color: #fff !important;
+  border-color: none !important;
+}
+
+body.active-menu .navigation li {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0px);
+}
+
+.navigation li a {
+  color: black;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  display: inline-block;
+  background: #212529;
+  padding: 2px 5px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.navigation li a:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transition: 0.5s;
+}
+
+/* ********************** */
+
+/* **** SOCIAL ICONS **** */
+
+section#social {
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  width: 100%;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+section#social ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+section#social ul li {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(100px);
+  transition-delay: calc(0.2s * var(--i));
+}
+
+section#social ul li a {
+  text-decoration: none;
+  color: #212529;
+}
+
+body.active-menu section#social {
+  z-index: 11;
+}
+body.active-menu section#social ul li {
+  opacity: 1 !important;
+  transform: translateY(0px);
+  visibility: visible !important;
+}
+
+/* ***************************************************************************** */
+
+/* **** REMOVING THAT HIDEOUS BLUE OUTLINE AROUND BOOTSTRAP ACCORDION ITEMS **** */
+
+.navigation .accordion-button:focus,
+.navigation a:focus,
+.navigation h2:focus,
+.accordion-button:not(.collapsed) {
+  outline: none;
+  box-shadow: none;
+}
+
+.navigation .accordion-.top:focus,
+.navigation .accordion-item:focus,
+.navigation .accordion-button:not(.collapsed) {
+  outline: none !important;
+  box-shadow: none;
+}
+
+button.accordion-button:focus,
+.accordion-item:focus {
+  outline: none;
+  border-color: transparent !important;
+}

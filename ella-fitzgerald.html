@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/top-menu.css" />
+    <link rel="stylesheet" href="css/content/arrows.css" />
+    <link rel="stylesheet" href="css/content/glass-html.css" />
+  </head>
+  <body>
+    <!-- **** NAVBAR **** -->
+    <header>
+      <section id="top-menu">
+        <div class="top">
+          <a href="index.html" class="logo"></a>
+          <div class="toggle"></div>
+        </div>
+        <div class="glass backdrop-blur"></div>
+      </section>
+      <section id="navigation">
+        <div class="accordion accordion-flush navigation" id="nav-accordion">
+          <div class="accordion-item" style="--i: 1">
+            <h5 class="accordion-header" id="HeadingOne">
+              <a href="index.html">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Home
+                </button>
+              </a>
+            </h5>
+          </div>
+          <div class="accordion-item" style="--i: 2">
+            <h5 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                The Warriors
+              </button>
+            </h5>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#nav-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <a href="jeanne-de-clisson.html">Jeanne de Clisson</a>
+                  </li>
+                  <li><a href="joe-frazier.html">Joe Frazier</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="--i: 3">
+            <h5 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                The Poets
+              </button>
+            </h5>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#nav-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="tina-chang.html">Tina Chang</a></li>
+                  <li><a href="mary-karr.html">Mary Karr</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="--i: 4">
+            <h5 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                The Musicians
+              </button>
+            </h5>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#nav-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="john-coltrane.html">John Coltrane</a></li>
+                  <li><a href="ella-fitzgerald.html">Ella Fitzgerald</a></li>
+                  <li><a href="morgan-james.html">Morgan James</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="social">
+        <ul class="text-center w-100">
+          <li style="--i: 1">
+            <a href="#"><i class="fab fa-facebook fa-5x"></i></a>
+          </li>
+          <li style="--i: 2">
+            <a href="#"><i class="fab fa-github fa-5x"></i></a>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <!-- **** NAVBAR ENDS HERE **** -->
+    <main>
+      <section class="glass-bio backdrop-blur">
+        <div class="row g-sm-0">
+          <div class="dashboard col-lg-4 col-md-12">
+            <div class="portrait-container my-5">
+              <img
+                src="img/heroes/ella/ella-portrait.jpg"
+                class="img-fluid"
+                alt="Ella Fitzgerald"
+              />
+            </div>
+            <h1>Ella Fitzgerald</h1>
+            <div class="achievements">
+              <h2>Known for:</h2>
+              <div class="achieved">
+                <span>A music genre is named after her.</span>
+              </div>
+              <div class="achieved my-2">
+                <span>So good even racists liked her.</span>
+              </div>
+              <div class="achieved">
+                <span>Insane vocal range</span>
+              </div>
+            </div>
+            <div class="quote">
+              <h3>Chosen Quote:</h3>
+              <p>
+                "Just don’t give up trying to do what you really want to do.
+                Where there is love and inspiration, I don’t think you can go
+                wrong."
+              </p>
+            </div>
+          </div>
+          <div class="content col-lg-8 col-md-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    So good at what you do, they name it after you
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/ella/ella-singing.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          In the Coltrane section we discussed <b>Bebop</b> ,
+                          the side of Jazz where the most difficult variations
+                          lie. Well,
+                          <b>Bebop was named after Ella Fitzgerald</b>.
+                        </p>
+                        <p>
+                          As evidence, listen to
+                          <a
+                            href="https://www.youtube.com/watch?v=D-7vSmTxAno"
+                            target="_blank"
+                            >this version of Blue Skies</a
+                          >. She begins with a scat solo.
+                        </p>
+                        <p>
+                          Notice <b>her preference for the 'B' sounds</b>,
+                          particularly <b>Bee's and Bahp's</b>. That's where the
+                          name comes from.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Jazz vs racism
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/ella/ella-monroe-color.jpg"
+                          alt=""
+                          class="img-fluid my-auto"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          You've probably seen the meme. The prestigious Mocambo
+                          wouldn't let Fitzgerald sing there due to segregation.
+                        </p>
+                        <p>
+                          In comes bombshell Marilyn Monroe and tells the people
+                          in charge that if they let her sing at the club,
+                          she'll reserve a front row seat for every performance.
+                          And wherever Monroe partied, the press was there in
+                          droves.
+                        </p>
+                        <p>
+                          Not only did Fitzgerald become a regular in the
+                          Mocambo, she never had to play small jaz venues for
+                          dimes on the dollar.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    The song to rule all singers
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div
+                        class="image-container col-xl-4 col-lg-12 align-self-center"
+                      >
+                        <img
+                          src="img/heroes/ella/ella-berlin.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-12 ps-3 pe-1 align-self-center"
+                      >
+                        <p>
+                          Fitzgerald's vocal range was three octaves and change.
+                          Very, very few musical pieces are written for such
+                          ranges because very few people would be able to
+                          perform them.
+                        </p>
+                        <p>
+                          However, there is a 7 minute gem where Fitzgerald
+                          playfully performs with the entirety of her range,
+                          from her lowest notes to the operatic highest.
+                        </p>
+                        <p class="text-center">
+                          It's called
+                          <a
+                            href="https://www.youtube.com/watch?v=iR1__k-BxhY"
+                            target="_blank"
+                            >How High the Moon, performed live in Berlin in
+                            '62</a
+                          >.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item custom-card">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    More on Jazz vs racism
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFcollapseFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body container">
+                    <div class="row">
+                      <div class="image-container col-xl-12 align-self-center">
+                        <img
+                          src="img/heroes/ella/ella-duke-louis.jpg"
+                          alt=""
+                          class="img-fluid"
+                          style="max-height: 12em"
+                        />
+                      </div>
+                      <div class="col-xl-12 ps-3 pe-1 align-self-center">
+                        <p>
+                          <b>Louis Armstrong</b>(center) once impressed a white
+                          composer/critic so much, he wrote about Armstrong,
+                          paraphrasing, that <b>a man who could play</b> the
+                          'horns' <b>like that had to have a soul</b>. He was
+                          being <b>inspired by angels</b>.
+                        </p>
+                        <p>
+                          <b>Duke Ellington's</b>(right) first name wasn't Duke.
+                          He was <b>nicknamed</b> that way given his
+                          <b>elegant mannerisms and dressing style</b>.
+                          Ellington wanted <b>black people</b> to be considered
+                          <b>respected members of the community</b> , and was
+                          trying to <b>set the example</b> .
+                        </p>
+                        <p>
+                          I believe <b>Jazz was powerful enough</b> to even
+                          <b>influence racism</b> in the 'States. And like Hugh
+                          Laurie said,
+                          <b>"America's greatest gift to the world is Jazz"</b>.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="arrow-set">
+        <a href="john-coltrane.html">
+          <div class="arrow" id="previous">
+            <i class="fas fa-chevron-left fa-3x"></i>&nbsp;
+          </div>
+        </a>
+        <a href="morgan-james.html">
+          <div class="arrow" id="next">
+            &nbsp;<i class="fas fa-chevron-right fa-3x"></i>
+          </div>
+        </a>
+      </div>
+    </main>
+    <script src="js/top-menu.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      tippy("#previous", {
+        content: "John Coltrane",
+        animation: "scale",
+      });
+      tippy("#next", {
+        content: "Morgan James",
+        animation: "scale",
+      });
+    </script>
+  </body>
+</html>

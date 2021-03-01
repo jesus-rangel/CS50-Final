@@ -56,6 +56,28 @@ p:before {
   height: 8em;
 }
 
+/* **** MODAL **** */
+
+.modal-header {
+  display: block;
+}
+
+.modal-header .btn-close {
+  position: absolute;
+  top: 0.8em;
+  right: 0.8em;
+}
+.browser-icon {
+  max-height: 2.5em;
+}
+
+.browser-header h5 {
+  justify-self: center;
+}
+/*  *************  */
+
+/* **** MEDIA QUERIES **** */
+
 @media (min-width: 576px) {
   #title {
     font-size: 18px;

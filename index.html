@@ -16,7 +16,6 @@
       href="https://unpkg.com/tippy.js@6/animations/scale.css"
     />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/top-menu.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/home/index.css" />
@@ -224,13 +223,117 @@
           <div id="image4-2" class="image"></div>
         </div>
       </div>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center">
+                We've detected you're using Firefox
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <p>Firefox does not yet support GlassMorphism</p>
+              <p>May we recommend any of the following browsers?</p>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <a
+                href="https://www.chromium.org/getting-involved/download-chromium"
+                target="_blank"
+              >
+                <img
+                  src="img/icons/Chromium_Logo.png"
+                  alt="Chromium"
+                  class="browser-icon"
+                  id="chromium-browser"
+                />
+              </a>
+              <a href="https://www.microsoft.com/en-us/edge" target="_blank">
+                <img
+                  src="img/icons/edge.png"
+                  alt="Edge"
+                  class="browser-icon"
+                  id="edge-browser"
+                />
+              </a>
+              <a href="https://brave.com/download/" target="_blank">
+                <img
+                  src="img/icons/brave.jpg"
+                  alt="Brave"
+                  class="browser-icon"
+                  id="brave-browser"
+                />
+              </a>
+              <a href="https://www.opera.com/download">
+                <img
+                  src="img/icons/opera.jpg"
+                  alt="Opera"
+                  class="browser-icon"
+                  id="opera-browser"
+                />
+              </a>
+              <a href="https://vivaldi.com/download/" target="_blank">
+                <img
+                  src="img/icons/vivaldi.svg"
+                  alt="Vivaldi"
+                  class="browser-icon"
+                  id="vivaldi-browser"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
+      integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <script src="js/tippy-index.js"></script>
     <script src="js/index.js"></script>
     <script src="js/top-menu.js"></script>
     <script src="js/fading-images.js"></script>
+    <script type="text/javascript">
+      /* Detecting browser and activating modal */
+      let isFirefox = typeof InstallTrigger !== "undefined";
+
+      $(document).ready(function () {
+        if ($.cookie("pop") == null && isFirefox == true) {
+          $("#myModal").modal("show");
+          $.cookie("pop", "1");
+        }
+      });
+
+      /* 
+       @ Some Credits
+       * 
+       * Solution for only displaying modal on first page load: 
+       * https://stackoverflow.com/questions/16596429/display-bootstrap-modal-first-time-page-loads
+       * 
+       * Reliable solution for detecting Firefox (and other browsers, highly recommended)
+       * https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+       *
+       * Broken Responsive Layout tutorial for index page:
+       * https://www.youtube.com/watch?v=AOq6v-bmpYs&list=LL&index=3
+       * 
+       * Layout tutorial for each of the "heroes" (Careful, original is not responsive at all)
+       * https://www.youtube.com/watch?v=O7WbVj5apxU&t=101s
+       *   
+       */
+    </script>
   </body>
 </html>

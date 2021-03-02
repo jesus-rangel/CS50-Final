@@ -142,6 +142,10 @@ main {
   line-height: 2;
 }
 
+.list-group-item {
+  background: transparent;
+}
+
 .content .accordion-button:focus,
 .content a:focus,
 .content h2:focus,

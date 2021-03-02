@@ -12,7 +12,9 @@ getTitle();
 
 window.onresize = getTitle;
 
-/* **** TIPPY INSTANCES */
+/* **** TIPPY INSTANCES **** */
+
+/* Fading Images */
 
 tippy.setDefaultProps({ animation: "scale" });
 
@@ -34,4 +36,14 @@ tippy(".coltrane", { content: "John Coltrane" });
 
 tippy(".karr", { content: "Mary Karr" });
 
-tippy("#chromium-browser", { content: "Download Chromium" });
+/* Browser Icons in Modal */
+
+tippy("#chromium-browser", { content: "Try Chromium Browser" });
+
+tippy("#edge-browser", { content: "Try Edge Browser" });
+
+tippy("#vivaldi-browser", { content: "Try Vivaldi Browser" });
+
+tippy("#brave-browser", { content: "Try Brave Browser" });
+
+tippy("#opera-browser", { content: "Try Opera Browser" });

@@ -1,3 +1,20 @@
+<!--
+    * 
+    @ SOME CREDITS
+    * 
+    * Solution for only displaying modal on first page load: 
+    * https://stackoverflow.com/questions/16596429/display-bootstrap-modal-first-time-page-loads
+    * 
+    * Reliable solution for detecting browsers (highly recommended)
+    * https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+    *
+    * Broken Responsive Layout tutorial for index page:
+    * https://www.youtube.com/watch?v=AOq6v-bmpYs&list=LL&index=3
+    * 
+    * Layout tutorial for each of the "heroes" (Careful, original is not responsive at all)
+    * https://www.youtube.com/watch?v=O7WbVj5apxU&t=101s
+    *
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -221,9 +238,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-center">
-                We've detected you're using Firefox
-              </h5>
+              <h5 class="modal-title text-center"></h5>
               <button
                 type="button"
                 class="btn-close"
@@ -231,10 +246,7 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body text-center">
-              <p>Firefox does not yet support GlassMorphism</p>
-              <p>May we recommend any of the following browsers?</p>
-            </div>
+            <div class="modal-body text-center"></div>
             <div class="modal-footer justify-content-between">
               <a
                 href="https://www.chromium.org/getting-involved/download-chromium"
@@ -292,33 +304,6 @@
     <script src="js/home/index.js"></script>
     <script src="js/home/fading-images.js"></script>
     <script src="js/top-menu.js"></script>
-    <script type="text/javascript">
-      /* Detecting browser and activating modal */
-      let isFirefox = typeof InstallTrigger !== "undefined";
-
-      $(document).ready(function () {
-        if ($.cookie("pop") == null && isFirefox == true) {
-          $("#myModal").modal("show");
-          $.cookie("pop", "1");
-        }
-      });
-
-      /* 
-       @ Some Credits
-       * 
-       * Solution for only displaying modal on first page load: 
-       * https://stackoverflow.com/questions/16596429/display-bootstrap-modal-first-time-page-loads
-       * 
-       * Reliable solution for detecting Firefox (and other browsers, highly recommended)
-       * https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
-       *
-       * Broken Responsive Layout tutorial for index page:
-       * https://www.youtube.com/watch?v=AOq6v-bmpYs&list=LL&index=3
-       * 
-       * Layout tutorial for each of the "heroes" (Careful, original is not responsive at all)
-       * https://www.youtube.com/watch?v=O7WbVj5apxU&t=101s
-       *   
-       */
-    </script>
+    <script type="text/javascript"></script>
   </body>
 </html>

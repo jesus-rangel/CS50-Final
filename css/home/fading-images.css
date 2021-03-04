@@ -94,7 +94,8 @@
 }
 
 #image2-tina {
-  background: url(../../img/home/tina/Tina-Chang.jpg);
+  background: url(../../img/home/tina/tina-highres.jpg);
+  background-position-x: 20%;
 }
 
 #image2-coltrane {

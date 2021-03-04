@@ -1,5 +1,5 @@
-title = document.querySelector("#title h1");
-subtitle = document.querySelector("#title p");
+const title = document.querySelector("#title h1"),
+  subtitle = document.querySelector("#title p");
 
 function getTitle() {
   if (window.innerWidth < 768) {
@@ -56,3 +56,39 @@ tippy("#vivaldi-browser", { content: "Try Vivaldi Browser" });
 tippy("#brave-browser", { content: "Try Brave Browser" });
 
 tippy("#opera-browser", { content: "Try Opera Browser" });
+
+/* Detecting browser and activating modal */
+let isFirefox = typeof InstallTrigger !== "undefined",
+  isSafari =
+    /constructor/i.test(window.HTMLElement) ||
+    (function (p) {
+      return p.toString() === "[object SafariRemoteNotification]";
+    })(
+      !window["safari"] ||
+        (typeof safari !== "undefined" && window["safari"].pushNotification)
+    );
+
+/* Modal contents */
+const modalTitle = document.querySelector("h5.modal-title"),
+  modalContents = document.querySelector(".modal-body");
+
+/* Modal Function on Browser detection */
+$(document).ready(function () {
+  if ($.cookie("pop") == null && isFirefox == true) {
+    /* For Firefox */
+    modalTitle.innerHTML = "We've detected you're using Firefox";
+    modalContents.innerHTML =
+      "<p>Firefox does not yet support GlassMorphism</p><p>May we recommend any of the following browsers?</p>";
+
+    $("#myModal").modal("show");
+    $.cookie("pop", "1");
+  } else if ($.cookie("pop") == null && isSafari == true) {
+    /* For Safari */
+    modalTitle.innerHTML = "We've detected you're using Safari";
+    modalContents.innerHTML =
+      "<p>Bootstrap 5 beta still has layout issues with Safari</p><p>May we recommend any of the following browsers?</p>";
+
+    $("#myModal").modal("show");
+    $.cookie("pop", "1");
+  }
+});

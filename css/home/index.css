@@ -166,7 +166,7 @@ p:before {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1700px) {
   #title {
     font-size: 24px;
     padding: 7em 4em 10em 7em;
@@ -183,6 +183,6 @@ p:before {
 
   #images-right {
     width: 40%;
-    height: 55em;
+    height: 53em;
   }
 }

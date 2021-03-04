@@ -12,17 +12,19 @@ function getIndex(min, max) {
 }
 
 async function toggleImages(images, animationType, fadeTime) {
-  let i;
+  let stack = [0, 0, 0],
+    stackIndex = 0;
   while (true) {
     let j = getIndex(0, images.length);
-    if (i == j) continue;
-    i = j;
+    if (stack.indexOf(j) > -1) continue;
+    stack[stackIndex] = j;
+    stackIndex = stackIndex === 2 ? 0 : ++stackIndex;
     for (const image of images) {
       if (image.classList.contains(animationType)) {
         image.classList.remove(animationType);
       }
     }
-    images[i].classList.add(animationType);
+    images[j].classList.add(animationType);
     await timer(fadeTime);
   }
 }

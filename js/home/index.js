@@ -1,10 +1,19 @@
 title = document.querySelector("#title h1");
+subtitle = document.querySelector("#title p");
 
 function getTitle() {
   if (window.innerWidth < 768) {
     title.innerHTML = "My heroes <br />&emsp;are weirdoes";
   } else {
     title.innerHTML = "My heroes are weirdoes";
+  }
+
+  if (window.innerWidth < 1600) {
+    subtitle.innerHTML =
+      "Talking about oneself is boring, <br />&emsp;&emsp;so let's talk about my heroes.";
+  } else {
+    subtitle.innerHTML =
+      "Talking about oneself is boring, so let's talk about my heroes.";
   }
 }
 

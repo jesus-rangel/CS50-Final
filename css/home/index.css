@@ -134,6 +134,10 @@ p:before {
   }
 }
 @media (min-width: 1200px) {
+  .top {
+    font-size: 1.1em;
+  }
+
   #title {
     font-size: 22px;
     padding: 7em 4em 3em 6em;
@@ -159,5 +163,26 @@ p:before {
 @media (min-width: 1400px) {
   #images-right {
     width: 35%;
+  }
+}
+
+@media (min-width: 1600px) {
+  #title {
+    font-size: 24px;
+    padding: 7em 4em 10em 7em;
+  }
+
+  #image3 {
+    width: 18em;
+    height: 18em;
+  }
+
+  #image4 {
+    height: 18em;
+  }
+
+  #images-right {
+    width: 40%;
+    height: 55em;
   }
 }

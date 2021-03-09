@@ -25,7 +25,15 @@ window.onresize = getTitle;
 
 /* Fading Images */
 
-tippy.setDefaultProps({ animation: "scale" });
+tippy.setDefaultProps({ 
+  animation: "scale",
+  onShow: function(tippy){
+		setTimeout(function() {
+			tippy.hide();
+      /* reference.reference.blur(); */ // for a second touch opening, lose focus
+		}, 3500);
+	}
+});
 
 tippy(".james", { content: "Morgan James" });
 

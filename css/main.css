@@ -36,3 +36,8 @@ li.list-group-item {
     backdrop-filter: blur(1em);
   }
 }
+
+.accordion-item {
+  background: transparent;
+  border: none;
+}

@@ -41,3 +41,11 @@ li.list-group-item {
   background: transparent;
   border: none;
 }
+
+.content .accordion-item.custom-card {
+  border-radius: 1rem;
+}
+
+.content .accordion-header .accordion-button.collapsed {
+  border-radius: 1rem;
+}
